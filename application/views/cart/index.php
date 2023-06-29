@@ -2,7 +2,7 @@
     <h1 class="main-heading"> <?php echo $title; ?> </h1>
 
     <?php 
-        if($data['cart_main_details']){
+        if($cart_main_details){
     ?>
         <h3> 
             Cart ID - <?php echo $cart_main_details[0]['cart_id']; ?> 

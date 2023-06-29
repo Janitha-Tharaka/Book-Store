@@ -6,7 +6,7 @@
     <div class="row justify-content-center">
         <div class="col-lg-12 col-xl-7">
         <?php 
-            if($data['cart_main_details']){
+            if($cart_main_details){
         ?>
             <div class="card">
                 <div class="card-body p-5">

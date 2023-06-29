@@ -22,11 +22,9 @@
             $data['title'] = 'Your Cart';
             $data['cart_main_details'] = $this->cart_model->get_cart_details($session_id);
             if($data['cart_main_details']){
-                $data['cart_item_details'] = $this->checkout_model->get_cart_item_details($data['cart_main_details'][0]['cart_id']);
+                $data['cart_item_details'] = $this->cart_model->get_cart_item_details($data['cart_main_details'][0]['cart_id']);
             }
-            $this->load->library('session');
-            $this->load->helper('security');
-            $this->load->helper('url');
+            
             $this->load->view('templates/header');
             $this->load->view('cart/index', $data);
             $this->load->view('templates/footer');
